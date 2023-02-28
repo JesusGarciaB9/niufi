@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-let shell = require('shelljs')
-//let colors = require('colors')
+let shell = require('shelljs') 
 let fs = require('fs') //fs already comes included with node.
 //let templates = require('./templates/templates.js')
 
