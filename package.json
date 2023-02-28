@@ -26,6 +26,6 @@
     "shelljs": "^0.8.5"
   },
   "bin": {
-    "create-niufi-app": "./generate-app.js"
+    "create-niufi-app": "./test-app.js"
   }
 }
