@@ -5,12 +5,14 @@ let fs = require('fs') //fs already comes included with node.
 //let templates = require('./templates/templates.js')
 
 let appName = process.argv[2]
+console.log("app name ",appName)
 let appDirectory = `${process.cwd()}/${appName}`
 
 const createNextApp = () => {
     return new Promise(resolve=>{
         if(appName){
-        shell.exec(`create next-app ${appName}`, () => {
+        shell.exec(`npx create-next-app@latest ${appName} --example https://github.com/JesusGarciaB9/Niufi-app-boiler`, () => {
+         
             console.log("Created next app")
             resolve(true)
         })
