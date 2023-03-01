@@ -1,14 +1,14 @@
 {
   "name": "create-niufi-app",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This is an example of how to do a \"create-app\" command with libraries like next.js , tailwind css and more",
-  "main": "index.js",
+  "main": "generate-niufi-app.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.js"
+    "start": "node generate-niufi-app.js",
+    "build": "parcel build generate-niufi-app.js"
   },
   "repository": {
     "type": "git",
@@ -21,11 +21,13 @@
   },
   "homepage": "https://github.com/JesusGarciaB9/niufi#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.5",
     "rimraf": "^4.1.2",
     "shelljs": "^0.8.5"
   },
   "bin": {
-    "create-niufi-app": "./test-app.js"
+    "create-niufi-app": "./generate-app.js"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
   }
 }

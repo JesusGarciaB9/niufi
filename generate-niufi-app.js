@@ -11,13 +11,13 @@ const createNextApp = () => {
     return new Promise(resolve=>{
         if(appName){
         shell.exec(`create next-app ${appName}`, () => {
-            console.log("Created react app")
+            console.log("Created next app")
             resolve(true)
         })
         }else{
         console.log("\nNo app name was provided.".red)
         console.log("\nProvide an app name in the following format: ")
-        console.log("\ncreate-react-redux-router-app ", "app-name\n".cyan)
+        console.log("\ncreate-next-app ", "app-name\n".cyan)
             resolve(false)
         }
     })
@@ -79,8 +79,7 @@ const updateTemplates = () => {
 
 
 const run = async () => {
-    //let success = await createNextApp()
-    shell.exec("echo shell.exec works");
+    let success = await createNextApp() 
     if(!success){
         console.log('Something went wrong while trying to create a new React app using create-react-app'.red)
         return false;
